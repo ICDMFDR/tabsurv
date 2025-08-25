@@ -59,14 +59,17 @@ The dataset  METABRIC is not allowed to upload publicly due to an agreement with
 
 ***1. Create a Conda Environment***
 
-Create a new Conda environment named tabsurv_env with specific versions of Python and R: (bash)
+Load modules in the HPC (High Performance Computing). Create a new python environment named tabsurv_env:
      
-    conda create -n tabsurv_env python=3.10 -c conda-forge -y
-    conda activate tabsurv_env
+    module purge
+     module load python3/3.10.4 cuda/12.3.2
+     python -m venv ~/tabsurv_env
+     source ~/tabsurv_env/bin/activate
+
 ***2. Install Python Packages:***
      Install essential Python packages using pip: (bash)
      
-    pip install numpy pandas scikit-learn scipy matplotlib seaborn tabpfn pycox xgboost scikit-survival torchtuples lifelines
+    pip install numpy pandas scikit-learn scipy matplotlib seaborn tabpfn pycox scikit-survival torchtuples lifelines
 
 
 
