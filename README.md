@@ -62,9 +62,9 @@ The dataset  METABRIC is not allowed to upload publicly due to an agreement with
 Load modules in the HPC (High Performance Computing). Create a new python environment named tabsurv_env:
      
     module purge
-     module load python3/3.10.4 cuda/12.3.2
-     python -m venv ~/tabsurv_env
-     source ~/tabsurv_env/bin/activate
+    module load python3/3.10.4 cuda/12.3.2
+    python -m venv ~/tabsurv_env
+    source ~/tabsurv_env/bin/activate
 
 ***2. Install Python Packages:***
      Install essential Python packages using pip: (bash)
