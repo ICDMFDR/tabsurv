@@ -1,0 +1,9 @@
+Model,mean_C_index,std_C_index,Stability_CI
+TabSurv,0.6621,0.0482,0.6139
+LogisticHazard,0.5716,0.1074,0.4642
+PMF,0.6052,0.0722,0.5330
+DeepHitSingle,0.5587,0.1327,0.4260
+PCHazard,0.6168,0.0926,0.5242
+MTLR,0.6326,0.0799,0.5527
+DeepSurv,0.6184,0.0947,0.5237
+RSF,0.6261,0.0884,0.5376
