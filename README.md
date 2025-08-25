@@ -1,6 +1,6 @@
 
 # TabSurv: Foundation Model-Based Survival Analysis
-A Python and R implementation of TabSurv: Foundation Model-Based Survival Analysis method.
+A Python implementation of TabSurv: Foundation Model-Based Survival Analysis method.
 
 
 # Infrastructure used to run experiments:
@@ -10,26 +10,27 @@ A Python and R implementation of TabSurv: Foundation Model-Based Survival Analys
 
 # Datasets
 
-| Dataset   | Sample Size | # Columns | # Events | Event (%) | Min Time | Max Time |
-|-----------|-------------|-----------|----------|-----------|----------|----------|
-| METABRIC  | 1,283       | 7,660     | 422      | 32.89%    | 0.00     | 29.60    |
-| TCGA500   | 500         | 7,915     | 45       | 9.00%     | 0.0027   | 17.91    |
-| GEO       | 736         | 7,915     | 349      | 47.40%    | 0.00     | 18.52    |
-| GSE6532   | 401         | 7,915     | 139      | 34.66%    | 0.022    | 16.85    |
-| GSE19783  | 100         | 7,915     | 43       | 43.00%    | 0.69     | 10.62    |
-| HEL       | 115         | 7,915     | 25       | 21.74%    | 0.00     | 5.00     |
-| UNT       | 133         | 7,915     | 28       | 21.05%    | 0.17     | 14.53    |
-| NKI       | 320         | 7,915     | 109      | 34.17%    | 0.02     | 18.35    |
-| TRANSBIG  | 198         | 7,915     | 62       | 31.31%    | 0.34     | 29.60    |
-| UK        | 207         | 7,915     | 77       | 37.20%    | 0.39     | 10.00    |
-| MAINZ     | 200         | 7,915     | 46       | 23.00%    | 0.08     | 19.72    |
-| UPP       | 235         | 7,915     | 54       | 23.08%    | 0.08     | 12.75    |
+| Dataset   | Sample Size | # Events | Event (%) | Min Time | Max Time |
+|-----------|-------------|----------|-----------|----------|----------|
+| METABRIC  | 1,283       |  422     | 32.89%    | 0.00     | 29.60    |
+| TCGA500   | 500         |  45      | 9.00%     | 0.0027   | 17.91    |
+| GEO       | 736         |  349     | 47.40%    | 0.00     | 18.52    |
+| GSE6532   | 401         |  139     | 34.66%    | 0.022    | 16.85    |
+| GSE19783  | 100         |  43      | 43.00%    | 0.69     | 10.62    |
+| HEL       | 115         |  25      | 21.74%    | 0.00     | 5.00     |
+| UNT       | 133         |  28      | 21.05%    | 0.17     | 14.53    |
+| NKI       | 320         |  109     | 34.17%    | 0.02     | 18.35    |
+| TRANSBIG  | 198         |  62      | 31.31%    | 0.34     | 29.60    |
+| UK        | 207         |  77      | 37.20%    | 0.39     | 10.00    |
+| MAINZ     | 200         |  46      | 23.00%    | 0.08     | 19.72    |
+| UPP       | 235         |  54      | 23.08%    | 0.08     | 12.75    |
 
+The dataset  METABRIC is not allowed to upload publicly due to the agreement with the providerprovider.
 
 # Baselines: 7 methods
 
 * LogisticHazard
-* PMF (iecewise Monotonic Function)
+* PMF (Probability Mass Function)
 * DeepHitSingle
 * PCHazard
 * MTLR (Multi-Task Logistic Regression))
@@ -75,7 +76,7 @@ Create a new Conda environment named tabsurv_env with specific versions of Pytho
 
 **1. Run 7 models for survival analysis for 12 datasets.**
 
-    python run_all_baselines.py
+    python baselines.py
 
 **2. Run the TabSurv model for 12 datasets**
 
@@ -83,4 +84,4 @@ Create a new Conda environment named tabsurv_env with specific versions of Pytho
     
 **3. Generate the evaluation results in the paper**
 
-    python evaluate_survival_models.py
+    python evaluations.py
