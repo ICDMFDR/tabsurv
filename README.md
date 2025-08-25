@@ -25,7 +25,7 @@ A Python implementation of TabSurv: Foundation Model-Based Survival Analysis met
 | MAINZ     | 200         |  46      | 23.00%    | 0.08     | 19.72    |
 | UPP       | 235         |  54      | 23.08%    | 0.08     | 12.75    |
 
-The dataset  METABRIC is not allowed to upload publicly due to an agreement with the providerr.
+The dataset  METABRIC is not allowed to upload publicly due to an agreement with the provider.
 
 # Baselines: 7 methods
 
@@ -55,11 +55,11 @@ The dataset  METABRIC is not allowed to upload publicly due to an agreement with
 * matplotlib 3.7.1
 * seaborn 0.12.2
 
-**Detailed Guidelines for Environment Setup using Conda on Linux**
+**Detailed Guidelines for Python Environment Setup**
 
-***1. Create a Conda Environment***
+***1. Create a Python Environment***
 
-Load modules in the HPC (High Performance Computing). Create a new python environment named tabsurv_env:
+Load modules in the High Performance Computing (HPC) and Create a new python environment named tabsurv_env:
      
     module purge
     module load python3/3.10.4 cuda/12.3.2
