@@ -25,7 +25,7 @@ A Python implementation of TabSurv: Foundation Model-Based Survival Analysis met
 | MAINZ     | 200         |  46      | 23.00%    | 0.08     | 19.72    |
 | UPP       | 235         |  54      | 23.08%    | 0.08     | 12.75    |
 
-The dataset  METABRIC is not allowed to upload publicly due to the agreement with the providerprovider.
+The dataset  METABRIC is not allowed to upload publicly due to an agreement with the providerr.
 
 # Baselines: 7 methods
 
