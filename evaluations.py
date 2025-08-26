@@ -39,7 +39,7 @@ for dataset in ALL_DATASETS:
     for model_name in MODELS:
         file_path = os.path.join(PREDICTION_DIR, f"{dataset}_{model_name}_predict.csv")
         if not os.path.exists(file_path):
-            print(f"❌ The dataset  {dataset} is not allowed to upload publicly due to the agreement.")
+            print(f"❌ The dataset  {dataset} is available upon request.")
             continue
 
         df = pd.read_csv(file_path)
@@ -146,4 +146,5 @@ summary_df.to_csv(output_path, index=False, float_format="%.4f")
 
 print(f"✅ Summary table saved to {output_path}")
 print(summary_df)
+
 
