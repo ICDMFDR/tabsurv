@@ -39,7 +39,7 @@ for dataset_name in All_DATASETS:
 
     file_path = f"input/{dataset_name}.csv"
     if not os.path.exists(file_path):
-        print(f"❌ The dataset {dataset_name} is not allowed to upload publicly due to the agreement.")
+        print(f"❌ The dataset {dataset_name} is  available upon request.")
         continue
     df, cols_standardize, cols_leave, duration_col, event_col = load_datafile_gene(dataset_name)
 
@@ -105,4 +105,5 @@ for dataset_name in All_DATASETS:
             "C-index": metrics["c_index"][0],
 
         })
+
 
