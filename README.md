@@ -4,7 +4,7 @@ A Python implementation of TabSurv: Foundation Model-Based Survival Analysis met
 
 
 # Infrastructure used to run experiments:
-* High performance compute (HPC)
+* High performance computing (HPC)
 * GPU: NVIDIA GPU (Tesla V100S-PCIE-32 GB).
 * RAM: 128 GB.
 
